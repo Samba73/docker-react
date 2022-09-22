@@ -1,0 +1,13 @@
+"version": "3.3"
+services:
+  redis-server:
+     image: "redis"
+  node:
+     build: .
+     ports:
+       - "8082:8085"   
+networks:
+  default:
+    external:
+      name: visits
+     
