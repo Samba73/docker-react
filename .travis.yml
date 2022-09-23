@@ -6,7 +6,11 @@ before_install:
    - docker build -t samba73/docker-react .
 
 script:
+<<<<<<< HEAD
+   - docker run -e CI=true samba73/docker-react
+=======
    - docker run samba73/docker-react 
+>>>>>>> 9d2dc22b4a1936ec81bf4504748181b5a705d0c7
 
 deploy:
    provider: elasticbeanstalk
