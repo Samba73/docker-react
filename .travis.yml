@@ -3,11 +3,10 @@ services:
    - docker
 # changed to dockerfile
 before_install: 
-   - docker build -t samba73/docker-react .
-   - docker run samba73/docker-react
+   - docker build -t samba73/docker-react -f Dockerfile.dev .
 
-#script:
-#   - docker run samba73/docker-react 
+script:
+   - docker run -e CI=true samba73/docker-react npm run test
 
 deploy:
    provider: elasticbeanstalk
