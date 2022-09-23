@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          I'm now from new branch Feature
+          Hosting in AWS Beanstalk
         </p>
         <a
           className="App-link"
